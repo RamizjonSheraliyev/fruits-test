@@ -17,14 +17,14 @@
     <!-- Header Section -->
     <header class="bg-white shadow-md">
       <div class="container mx-auto flex items-center justify-between p-4">
-        <nav>
-          <ul class="flex space-x-8 text-gray-700">
+        <div class="lg:flex-1 flex items-center space-x-8 text-gray-700">
+          <ul class="lg:flex space-x-8 text-gray-700 hidden lg:flex">
             <li><a href="#" class="hover:text-green-600">About Us</a></li>
             <li><a href="#" class="hover:text-green-600">Service</a></li>
             <li><a href="#" class="hover:text-green-600">Menu</a></li>
             <li><a href="#" class="hover:text-green-600">Contact</a></li>
           </ul>
-        </nav>
+        </div>
         <img src="./planet-earth (1) 1.svg" alt="Logo" class="w-12 h-12" />
         <div class="flex space-x-4">
           <button class="hover:text-green-600">
@@ -99,11 +99,76 @@
           <button
             class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700"
           >
-            Regestar Now
+            Register Now
           </button>
         </div>
+        <!-- Mobile Menu Button -->
+        <button
+          class="lg:hidden text-gray-700"
+          id="mobile-menu-toggle"
+          onclick="toggleMenu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- Side Menu (Mobile) -->
+    <div
+      class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out"
+      id="side-menu"
+    >
+      <div class="flex flex-col p-6">
+        <!-- Close Button (X) -->
+        <button
+          class="text-gray-700 absolute top-4 right-4"
+          id="close-menu"
+          onclick="toggleMenu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <a href="#" class="mb-4 text-lg text-gray-700 hover:text-green-600"
+          >About Us</a
+        >
+        <a href="#" class="mb-4 text-lg text-gray-700 hover:text-green-600"
+          >Service</a
+        >
+        <a href="#" class="mb-4 text-lg text-gray-700 hover:text-green-600"
+          >Menu</a
+        >
+        <a href="#" class="mb-4 text-lg text-gray-700 hover:text-green-600"
+          >Contact</a
+        >
+      </div>
+    </div>
 
     <!-- Main Section -->
     <main>
@@ -116,43 +181,29 @@
             <p class="mt-4 text-gray-600">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              ever since the 1500s, when an unknown printer took a galley...
             </p>
             <a
               href="#"
-              class="mt-6 inline-flex items-center bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700"
+              class="mt-6 inline-block text-white bg-green-600 py-2 px-6 rounded hover:bg-green-700"
+              >Explore</a
             >
-              Order Now
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 ml-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
           </div>
-          <div class="lg:w-1/2">
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
             <img
               src="./images/vegetables-fruits-white_55883-892 1.png"
-              alt="Basket"
-              class="w-full h-auto"
+              alt="Fruits"
+              class="w-full h-auto object-cover rounded-lg"
             />
           </div>
         </div>
+      </section>
 
-        <!-- Statistics -->
-        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+      <section class="mt-12 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div class="bg-white p-6 rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">30K</h2>
-            <p class="mt-2 text-gray-600">User Order</p>
+            <p class="mt-2 text-gray-600">User Orders</p>
           </div>
           <div class="bg-white p-6 rounded shadow-md">
             <h2 class="text-2xl font-bold text-gray-800">20K</h2>
@@ -164,6 +215,7 @@
           </div>
         </div>
       </section>
+ 
       <section id="info-section" class="w-full mt-20">
         <div class="container w-11/12 mx-auto flex">
           <div class="left-child w-1/2">
@@ -204,16 +256,91 @@
           <div class="right-child w-1/2 relative flex items-center">
             <img src="/images/Ellipse 141.png" alt="" class="w-9/12 h-3/4 mx-auto">
             <img src="/images/man-grocery.png" alt="" class="absolute left-36 bottom-44">
+=======
+
+      <!-- section three -->
+      <section class="special-items-section bg-green-50 py-16">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center">
+          <!-- Image Grid -->
+          <div class="lg:w-1/2 grid grid-cols-2 gap-6 transform rotate-[-5deg]">
+            <div
+              class="relative bg-white p-4 rounded-lg shadow-lg transform rotate-[5deg]"
+            >
+              <img
+                src="./images/Rectangle 360.png"
+                alt="Cucumber"
+                class="rounded-lg"
+              />
+            </div>
+            <div
+              class="relative bg-white p-4 rounded-lg shadow-lg transform rotate-[10deg]"
+            >
+              <img
+                src="./images/image 29.png"
+                alt="Oranges"
+                class="rounded-lg"
+              />
+            </div>
+            <div
+              class="relative bg-white p-4 rounded-lg shadow-lg transform rotate-[-10deg]"
+            >
+              <img src="./images/image 31.png" alt="Apple" class="rounded-lg" />
+            </div>
+            <div
+              class="relative bg-white p-4 rounded-lg shadow-lg transform rotate-[5deg]"
+            >
+              <img
+                src="./images/bok-choy-white-wall_55883-10867.png"
+                alt="Greens"
+                class="rounded-lg"
+              />
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left lg:pl-10 mt-10 lg:mt-0">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Explore Our Special Items
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer...
+            </p>
+            <a
+              href="#"
+              class="text-black py-3 px-8 rounded-full flex items-center justify-center gap-2 hover:transition"
+            >
+              Explore Now
+              <span
+                class="bg-white text-green-600 w-8 h-8 rounded-full flex items-center justify-center text-lg shadow-md"
+              >
+                &rarr;
+              </span>
+            </a>
+
+            <!-- Additional Images Below the Button -->
+            <div class="flex justify-center lg:justify-start gap-4 mt-6">
+              <img
+                src="./images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145.png"
+                alt="Bell Peppers"
+                class="max-w-xs md:max-w-md lg:max-w-lg object-contain"
+              />
+            </div>
+ 
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-      <div>
-        
-      </div>
-    </footer>
+    <footer></footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("side-menu");
+        menu.classList.toggle("-translate-x-full");
+      }
+    </script>
   </body>
 </html>
