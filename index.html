@@ -10,35 +10,167 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css">
     <title>Fruits</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-
-  <!--header section  -->
-     <header>
-        <div class="container">
-            <nav>
-
-            </nav>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <nav>
+          <ul class="flex space-x-8 text-gray-700">
+            <li><a href="#" class="hover:text-green-600">About Us</a></li>
+            <li><a href="#" class="hover:text-green-600">Service</a></li>
+            <li><a href="#" class="hover:text-green-600">Menu</a></li>
+            <li><a href="#" class="hover:text-green-600">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="./planet-earth (1) 1.svg" alt="Logo" class="w-12 h-12" />
+        <div class="flex space-x-4">
+          <button class="hover:text-green-600">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="11.9609"
+                cy="11.7666"
+                r="8.98856"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.2126 18.4851L21.7367 22"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="hover:text-green-600">
+            <svg
+              width="41"
+              height="40"
+              viewBox="0 0 41 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20.1943" cy="20" r="20" fill="#F3FBF8" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.6166 27.8203C16.0386 27.8203 16.3816 28.1633 16.3816 28.5853C16.3816 29.0073 16.0386 29.3493 15.6166 29.3493C15.1946 29.3493 14.8526 29.0073 14.8526 28.5853C14.8526 28.1633 15.1946 27.8203 15.6166 27.8203Z"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M26.869 27.8203C27.291 27.8203 27.634 28.1633 27.634 28.5853C27.634 29.0073 27.291 29.3493 26.869 29.3493C26.447 29.3493 26.104 29.0073 26.104 28.5853C26.104 28.1633 26.447 27.8203 26.869 27.8203Z"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.9442 11.25L13.0242 11.61L13.9872 23.083C14.0652 24.018 14.8462 24.736 15.7842 24.736H26.6962C27.5922 24.736 28.3522 24.078 28.4812 23.19L29.4302 16.632C29.5472 15.823 28.9202 15.099 28.1032 15.099H13.3582"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.3197 18.7969H25.0927"
+                stroke="#222222"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700"
+          >
+            Regestar Now
+          </button>
         </div>
-     </header>
+      </div>
+    </header>
 
-<!--main section  -->
-
-     <main>
-        <section>
-
-        </section>
-     </main>
-
-     <!--footer section  -->
-     <footer>
-        <div class="container">
-       
+    <!-- Main Section -->
+    <main>
+      <section class="container mx-auto mt-10 px-4 lg:px-0">
+        <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+          <div class="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-800">
+              Organic Fruit & Vegetables
+            </h1>
+            <p class="mt-4 text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700"
+            >
+              Order Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="lg:w-1/2">
+            <img
+              src="./images/vegetables-fruits-white_55883-892 1.png"
+              alt="Basket"
+              class="w-full h-auto"
+            />
+          </div>
         </div>
-     </footer>
 
+        <!-- Statistics -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">30K</h2>
+            <p class="mt-2 text-gray-600">User Order</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">20K</h2>
+            <p class="mt-2 text-gray-600">Reviews (4.8)</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800">300</h2>
+            <p class="mt-2 text-gray-600">Items</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        
+      </div>
+    </footer>
   </body>
 </html>
